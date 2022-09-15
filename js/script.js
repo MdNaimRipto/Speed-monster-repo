@@ -9,6 +9,7 @@ const modalBackground = document.getElementById("modal-background");
 let userText = "";
 let errorCount = 0;
 let startTime;
+console.log(startTime);
 let questionText = "";
 
 // Load and display question
@@ -107,7 +108,7 @@ const start = () => {
   countdownOverlay.style.display = "flex";
 
   const startCountdown = setInterval(() => {
-    countdownOverlay.innerHTML = '<h1>${count}</h1>';
+    countdownOverlay.innerHTML = `<h1>${count}</h1>`;
 
     // finished timer
     if (count == 0) {
