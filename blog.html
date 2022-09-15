@@ -40,7 +40,7 @@
         <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
             <div class="accordion-item nav-container">
                 <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed bg-dark text-light" type="button"
+                    <button class="accordion-button collapsed bg-dark text-light fw-light" type="button"
                         data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
                         aria-controls="flush-collapseOne">
                         What is difference between local storage and session storage?
@@ -48,14 +48,15 @@
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body text-light">Placeholder content for this accordion, which is intended to
-                        demonstrate
-                        the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    <div class="accordion-body text-light">Session storage and Local Storage are quite similar. The main
+                        difference are while data in localStorage doesn't expire. While data in sessionStorage is
+                        cleared when the page session ends.
+                    </div>
                 </div>
             </div>
             <div class="accordion-item nav-container">
                 <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed bg-dark text-light" type="button"
+                    <button class="accordion-button collapsed bg-dark text-light fw-light" type="button"
                         data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
                         aria-controls="flush-collapseTwo">
                         What is the difference between global scope and block scope?
@@ -63,15 +64,18 @@
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body text-light">Placeholder content for this accordion, which is intended to
-                        demonstrate
-                        the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                        this being filled with some actual content.</div>
+                    <div class="accordion-body text-light">Global scope means that the variables can be accessed from
+                        any part of that program. Any function or conditional state can access that variable. Variables
+                        declared with the var keyword, do not have block scope, it is a global scope.
+                        On the
+                        otherside the block scope restricts the variable that is declared inside a specific block, from
+                        access by the outside of the block. The let & const keyword facilitates the variables to be
+                        block scoped.</div>
                 </div>
             </div>
             <div class="accordion-item nav-container">
                 <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed bg-dark text-light" type="button"
+                    <button class="accordion-button collapsed bg-dark text-light fw-light" type="button"
                         data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
                         aria-controls="flush-collapseThree">
                         How JavaScript event loop works?
@@ -79,30 +83,35 @@
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body text-light">Placeholder content for this accordion, which is intended to
-                        demonstrate
-                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                        exciting happening here in terms of content, but just filling up the space to make it look, at
-                        least at first glance, a bit more representative of how this would look in a real-world
-                        application.</div>
+                    <div class="accordion-body text-light">The Event Loop has one simple job, to monitor the Call Stack
+                        and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event
+                        from the queue and will push it to the Call Stack, which effectively runs it.
+
+                        Such an iteration is called a tick in the Event Loop. Each event is just a function callback.
+
+                    </div>
                 </div>
             </div>
             <div class="accordion-item nav-container">
                 <h2 class="accordion-header" id="flush-headingFour">
-                    <button class="accordion-button collapsed bg-dark text-light" type="button"
+                    <button class="accordion-button collapsed bg-dark text-light fw-light" type="button"
                         data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
                         aria-controls="flush-collapseFour">
-                        How many ways we can get Undifined in JavaScript?
+                        How many ways we can get Undefined in JavaScript?
                     </button>
                 </h2>
                 <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body text-light">Placeholder content for this accordion, which is intended to
-                        demonstrate
-                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                        exciting happening here in terms of content, but just filling up the space to make it look, at
-                        least at first glance, a bit more representative of how this would look in a real-world
-                        application.</div>
+                    <div class="accordion-body text-light">The undefined is a primitive type in JavaScript.JavaScript
+                        uses the undefined value in the following situations.
+                        <ul>
+                            <li>Accessing an uninitialized variable returns undefined.</li>
+                            <li>Accessing a non-existing property of an object returns undefined.</li>
+                            <li>Accessing a out-of-bounds array element returns undefined.</li>
+                            <li>A function without an expression returns undefined.</li>
+                            <li>A function without a return statement returns undefined.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
