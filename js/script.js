@@ -9,7 +9,6 @@ const modalBackground = document.getElementById("modal-background");
 let userText = "";
 let errorCount = 0;
 let startTime;
-console.log(startTime);
 let questionText = "";
 
 // Load and display question
@@ -133,7 +132,9 @@ displayHistory();
 // Show typing time spent
 setInterval(() => {
   const currentTime = new Date().getTime();
-  const timeSpent = (currentTime - startTime) / 1000;
+  // console.log(currentTime)
+  const timeSpent = Math.round((currentTime - startTime) / 1000);
+  // console.log(Math.round(timeSpent))
 
 
   document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
